@@ -4,8 +4,11 @@ GINNA: An atlas of 33 resting-state networks with empirical cognitive labelling
 paper doi xx
 
 
-<img src="images/rsnlowlevel.png" alt="Example Image" width="200"/>
+<img src="images/rsn_lowlevel.png" alt="Example Image" width="200"/>
 
+
+
+<img src="images/rsn_highlevel.png" alt="Example Image" width="200"/>
 
 | RSN   | Anatomical label   | Cognitive label (Cognitive Atlas ontology)   |
 |:------|:-------------------|:---------------------------------------------|

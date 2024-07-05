@@ -1,7 +1,18 @@
 # ginna
 GINNA: An atlas of 33 resting-state networks with empirical cognitive labelling
 
+The Groupe d'Imagerie Neurofonctionnelle Network Atlas (GINNA) is a resting-state atlas that comprises 33 resting-state networks (RSNs). 
+
+Each network has been evaluated with respect to its cognitive profile using a meta-analytic decoding strategy that rests on Neurosynth.
+Each network is provided with a suggested cognitive label, as determined to faithfully summarize the results of the decoding by 6 independent neuroimaging experts. 
+
+More details are available in the preprint:
+
 paper doi xx
+
+Two versions of the atlas are provided: zstats maps and binary maps. 
+
+As the networks may overlap, the zstat atlas can be used as a probabilistic atlas. see [link] examples.
 
 
 <img src="images/rsn_lowlevel.png" alt="Example Image" width="800"/>

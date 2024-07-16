@@ -10,7 +10,7 @@ More details are available in the preprint:
 
 paper doi xx
 
-Two versions of the atlas are provided: zstats maps and binary maps. 
+Two versions of the atlas are provided: zstats maps (includes overlap) and binary maps (no overlap between networks). 
 
 As the networks may overlap, the zstat atlas can be used as a probabilistic atlas. see [link] examples.
 

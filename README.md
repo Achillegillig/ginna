@@ -15,7 +15,7 @@ Two versions of the atlas are provided: zstats maps and binary maps.
 As the networks may overlap, the zstat atlas can be used as a probabilistic atlas. see [link] examples.
 
 
-<img src="images/rsn_lowlevel.png" alt="Example Image" width="800"/>
+<img src="images/rsn_lowlevel.png" alt="Example Image" width="750"/>
 
 
 

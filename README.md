@@ -23,38 +23,39 @@ As the networks may overlap, the zstat atlas can be used as a probabilistic atla
 
 | RSN   | Anatomical label   | Cognitive label (Cognitive Atlas ontology)   |
 |:------|:-------------------|:---------------------------------------------|
-| RSN01 | CingPN             | n.s.                                         |
-| RSN02 | BGN                | reward processing                            |
-| RSN03 | ON-I               | visual perception                            |
-| RSN04 | PN-I               | articulation                                 |
-| RSN05 | CingN              | decision making                              |
-| RSN06 | L-FTN-I            | syntactic processing                         |
-| RSN07 | PN-II              | somatosensation                              |
-| RSN08 | D-FPN-I            | motor imagery                                |
-| RSN09 | PN-III             | movement (left hand)                         |
-| RSN10 | PN-IV              | movement (right hand)                        |
-| RSN11 | med-CingFN         | theory of mind                               |
-| RSN12 | L-FPN              | mental arithmetic                            |
-| RSN13 | L-FTN-II           | self monitoring, theory of mind              |
-| RSN14 | D-FPN-II           | spatial selective attention                  |
-| RSN15 | OTN                | object perception                            |
-| RSN16 | med-CingTN         | memory retrieval                             |
-| RSN17 | med-FPN            | self-referential processing                  |
-| RSN18 | FTPN-I             | n.s.                                         |
-| RSN19 | ON-II              | visual form discrimination                   |
-| RSN20 | PN-V               | movement (limb)                              |
-| RSN21 | FTPN-II            | cognitive control                            |
-| RSN22 | L-FTN-III          | sentence comprehension                       |
-| RSN23 | TN-I               | auditory perception                          |
-| RSN24 | InsFPN             | phonological working memory                  |
-| RSN25 | FTPN-III           | reasoning                                    |
-| RSN26 | ON-III             | n.s.                                         |
-| RSN27 | mid-CingInsN       | performance monitoring                       |
-| RSN28 | D-CingFPN          | working memory                               |
-| RSN29 | TN-II              | speech perception                            |
-| RSN30 | InsFTPN            | expectancy                                   |
-| RSN31 | FTPN-IV            | motor planning                               |
-| RSN32 | ON-IV              | motion detection, visual object recognition  |
-| RSN33 | L-FTPN             | reading, mental arithmetic                   |
+| RSN01 | pCing-medPN        | n.s.                                         |
+| RSN02 | R-FTPN-03          | n.s.                                         |
+| RSN03 | ON-04              | motion detection, visual object recognition  |
+| RSN04 | PcN-02             | articulation                                 |
+| RSN05 | med-TN             | memory retrieval                             |
+| RSN06 | PcN-01             | movement (limb)                              |
+| RSN07 | med-FPN            | self-referential processing                  |
+| RSN08 | D-FPN-03           | spatial selective attention                  |
+| RSN09 | ON-01              | visual perception                            |
+| RSN10 | D-FPN-01           | motor planning                               |
+| RSN11 | PcN-03             | somatosensation                              |
+| RSN12 | L-FTPN-02          | reasoning                                    |
+| RSN13 | aCingN             | decision making                              |
+| RSN14 | TN-01              | auditory perception                          |
+| RSN15 | L-FTN              | syntactic processing                         |
+| RSN16 | mCingFPN           | working memory                               |
+| RSN17 | R-FTPN-01          | self monitoring, theory of mind              |
+| RSN18 | FTPN-01            | expectancy                                   |
+| RSN19 | L-FTPN-01          | sentence comprehension                       |
+| RSN20 | R-FTPN-02          | mental arithmetic                            |
+| RSN21 | L-PcN              | movement (right hand)                        |
+| RSN22 | mCingInsN          | performance monitoring                       |
+| RSN23 | L-InsFPN           | phonological working memory                  |
+| RSN24 | BGN                | reward anticipation                          |
+| RSN25 | R-PcN              | movement (left hand)                         |
+| RSN26 | ON-03              | n.s.                                         |
+| RSN27 | FTPN-02            | reading, mental arithmetic                   |
+| RSN28 | med-FN             | theory of mind                               |
+| RSN29 | ON-02              | visual form discrimination                   |
+| RSN30 | D-FPN-02           | motor imagery                                |
+| RSN31 | R-FInsN            | interference resolution                      |
+| RSN32 | OTN                | object perception                            |
+| RSN33 | TN-02              | speech perception                            |
+
 
 

@@ -1,4 +1,9 @@
 
+import os
+from pathlib import Path
+import requests
+import shutil
+import zipfile
 class Utilities:
     
     def __init__(self) -> None:
@@ -351,5 +356,63 @@ class Utilities:
         return self.concat_ds
 
     
+def fetch_neurosynth_data(out_dir):
 
+    repo_url = 'https://github.com/vale-pak/BCS'
+    files = {'dataset': '2017_dataset.zip',
+            'terms': 'BCS_3D.csv'}
     
+    for key, file in files.items():
+        download_files_from_github(repo_url, file, f'{out_dir}/{key}')
+
+        if file.endswith('.zip') == False:
+            continue
+
+        print(f'Unzipping {file}')
+        with zipfile.ZipFile(f'{out_dir}/{key}/{file}', 'r') as zip_ref:
+            zip_ref.extractall(f'{out_dir}/{key}')
+
+        macosx_dir = f'{out_dir}/{key}/__MACOSX'
+        if os.path.exists(macosx_dir):
+            shutil.rmtree(macosx_dir)
+        # os.remove(f'{out_dir}/{key}/{file}')
+
+        # Move files from subfolder to parent folder
+        subfolder = f'{out_dir}/{key}/Originals_2017_dataset'
+        for root, dirs, files in os.walk(subfolder):
+            for file in files:
+                file_path = os.path.join(root, file)
+                shutil.move(file_path, Path(subfolder).parent)
+        # Remove empty dir
+        if os.path.exists(subfolder):
+            os.rmdir(subfolder)
+
+def download_files_from_github(repo_url, file_paths, local_dir, branch='main'):
+    """
+    Download files from a specified GitHub repository directory.
+
+    Parameters:
+    - repo_url: URL to the GitHub repository (e.g., 'https://github.com/user/repo').
+    - file_paths: List of file paths within the repository to download.
+    - local_dir: Local directory to save the downloaded files.
+    - branch: Branch name to download from (default is 'main').
+    """
+    # Ensure the local directory exists
+    os.makedirs(local_dir, exist_ok=True)
+
+    file_paths = [file_paths] if isinstance(file_paths, str) else file_paths
+
+    for file_path in file_paths:
+        # Construct the URL to the raw content
+        raw_url = f"{repo_url.replace('github.com', 'raw.githubusercontent.com')}/{branch}/{file_path}"
+        
+        # Fetch the file
+        response = requests.get(raw_url)
+        if response.status_code == 200:
+            # Save the file locally
+            local_file_path = os.path.join(local_dir, os.path.basename(file_path))
+            with open(local_file_path, 'wb') as file:
+                file.write(response.content)
+            print(f"Downloaded {file_path} to {local_file_path}")
+        else:
+            print(f"Failed to download {file_path} from {raw_url}")

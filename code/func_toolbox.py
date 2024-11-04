@@ -1,4 +1,5 @@
 
+import numpy as np
 import os
 from pathlib import Path
 import requests
@@ -7,8 +8,6 @@ import zipfile
 class Utilities:
     
     def __init__(self) -> None:
-        import os
-        import numpy as np
         # self.user = os.getlogin()
         # if self.user == 'root':
         #     self.user = 'achillegillig'
@@ -17,10 +16,12 @@ class Utilities:
         # directory of parcels
         self._project_dir = '/homes_unix/agillig/Projects/FabricOfCognition'
         self._analysis_dir = self.project_dir + '/analysis'
-        self._projections_dir = self.analysis_dir + '/projections'
+        # self._projections_dir = self.analysis_dir + '/projections'
         # self.parcellations_dir = self.analysis_dir + '/parcellations'
 
         self.RSNs_filelist_dir = '/homes_unix/agillig/RSN_MRISHARE_filelist'
+
+        self.n_terms = None
         
 
     @property
@@ -59,6 +60,15 @@ class Utilities:
     def parcel_dir(self, value):
         self._parcel_dir = value
 
+    def set_project_dir(self, project_dir):
+        self._project_dir = project_dir
+        self._analysis_dir = self._project_dir + '/analysis'
+
+    def set_atlas(self, atlas):
+        self.atlas = atlas
+    
+    def set_atlas_name(self, atlas_name):
+        self.atlas_name = atlas_name
 
     def compute_correlations(self, input_vector, database):
         import numpy as np
@@ -105,94 +115,104 @@ class Utilities:
 
         return atlas_img
 
-    def compute_correlations_null(self, savefile, nullfiles, database, n_perm_per_batch, n_batches):
-        
-        import os
-        import numpy as np
+    def compute_correlation_null(self, rsn, n_perm = 1000, n_batches = 10, overwrite = False):
+        print(f'processing rsn {rsn}')
 
-        self.savefile = savefile
-        self.nullfiles = nullfiles
-        self.database = database
-        self.n_perm_per_batch = n_perm_per_batch
-        self.n_batches = n_batches
+        if type(rsn) == int:
+            rsn = f'{rsn:02d}'
 
-        if os.path.isfile(self.savefile):
-            print('file already exists; no overwriting')
-            self.corr_temp = np.loadtxt(self.savefile)
-            return self.corr_temp
+        null_dir = self._analysis_dir + '/null_correlations'
+        save_dir = null_dir + f'/rsn-{rsn}'
+        os.makedirs(save_dir, exist_ok=True)
+        save_file = os.path.join(save_dir, f'rsn-{rsn}_null_correlations.csv')    
+
+        if os.path.isfile(save_file) and overwrite == False:
+            print('file already exists; no overwriting - loading existing data')
+            return np.loadtxt(save_file)
         
-        self.data = []
-        for i, batch in enumerate(range(1,self.n_batches+1)):
-            null_parcellations_file = self.nullfiles[i]
-            self.temp_data = np.loadtxt(null_parcellations_file, delimiter = ' ')
-            self.data.append(self.temp_data)
-        self.data = np.concatenate(self.data, axis = 0)
+        data = []
+        for batch in range(1,n_batches+1):
+            null_prcl_dir = self._analysis_dir + f'/mean_RSNs_{self.atlas_name}/null_parcellations'
+            null_parcellations_file = null_prcl_dir + f'/rsn-{rsn}/rsn-{rsn}_null_parcellations_batch-{batch:02d}_of_{n_batches}.csv'
+            temp_data = np.loadtxt(null_parcellations_file, delimiter = ' ')
+            data.append(temp_data)
+        data = np.concatenate(data, axis = 0)
         # print(f'shape of data: {data.shape}')
-        self.n_terms = self.database.shape[0]
+
+        index = int(rsn) - 1
+
         # Get the target series
-
-        self.corr_temp = []
-        for j in range(self.n_terms):
+        corr_temp = []
+        n_terms = self.dataset_parcellated.shape[0]
+        for j in range(n_terms):
             
-            self.term_single = self.database.iloc[j,:].values
+            term_single = self.dataset_parcellated.iloc[j,:].values
             # Compute the Pearson correlation coefficient for each column
-            self.corr_temp.append([np.corrcoef(self.data.T[:, i], self.term_single)[0,1] for i in range(self.n_perm_per_batch * self.n_batches)])
-        self.corr_temp = np.array(self.corr_temp)
+            corr_temp.append([np.corrcoef(data.T[:, i], term_single)[0,1] for i in range(n_perm * n_batches)])
 
+            # corr_temp = []
+            # for j, (term, file) in enumerate(zip(BCSterms, BCS_maps_files)): 
+            #     img_comparison = image.index_img(concat_ds, j)
+            #     data_comparison = img_comparison.get_fdata().copy()
+            #     corr_temp.append(np.corrcoef(data.flatten(), data_comparison.flatten())[1,0])
+        corr_temp = np.array(corr_temp)
+        # spatial_correlation_null[rsn] = corr_temp
+        # save to file
         print('saving file')
-        np.savetxt(self.savefile, self.corr_temp) 
-
-        return self.corr_temp
+        np.savetxt(save_file, corr_temp) 
+        return corr_temp
     
 
     def compute_pvalues(self, observed_correlations, null_distribution):
         import numpy as np 
-        self.observed_correlations = observed_correlations
         # nulldistribution: 2D array containing the null distribution of the correlations, shape (n_terms, n_perms)
-        self.null_distribution = null_distribution
+        null_distribution = null_distribution
 
-        self.corrected_null_distribution = np.max(self.null_distribution, axis=0)
+        corrected_null_distribution = np.max(null_distribution, axis=0)
+        if type(observed_correlations) == list:
+            observed_correlations = np.array(observed_correlations)
 
-        self.n_terms = self.observed_correlations.shape[0]
+        if self.n_terms is None:
+            self.n_terms = observed_correlations.shape[0]
 
         # data_parcellated = np.loadtxt(parcellation_file, delimiter = ',')
-        self.pvalues = []
-        self.pvalues_corr = []
+        pvalues = []
+        pvalues_corr = []
         observed_corr_list = []
         # null_distribution = np.loadtxt(null_distribution_file, delimiter = ' ')
         tmp_ind_obs = []
         for t in range(self.n_terms): 
             
-            self.observed_correlation = self.observed_correlations[t]
+            observed_correlation = observed_correlations[t]
             # print(f'observed correlation: {observed_corr}')
             # observed_corr_list.append(observed_corr)
             null_corr= []
 
             # without correction for multiple comparisons
-            self.null_distribution_term = self.null_distribution[t,:]
-            self.distr_sorted = np.sort(self.null_distribution_term)
+            null_distribution_term = null_distribution[t,:]
+            distr_sorted = np.sort(null_distribution_term)
 
-            self.n_val = len(self.distr_sorted) + 1
-            self.ind_obs = self.n_val - np.searchsorted(self.distr_sorted, self.observed_correlation) #+1 # +1 because python indices start at 0 
+            n_val = len(distr_sorted) + 1
+            ind_obs = n_val - np.searchsorted(distr_sorted, observed_correlation) #+1 # +1 because python indices start at 0 
             # indice observé: rank of the observed correlation in the null distribution
             # tmp_ind_obs.append(ind_obs)
-            self.p_val = self.ind_obs / self.n_val
-            self.pvalues.append(self.p_val)
+            p_val = ind_obs / n_val
+            pvalues.append(p_val)
 
 
              # with CORRECTION FOR MULTIPLE COMPARISONS
-            self.corrected_distr_sorted = np.sort(self.corrected_null_distribution)
-            self.n_val = len(self.corrected_distr_sorted) + 1
-            self.ind_obs_corr = self.n_val - np.searchsorted(self.corrected_distr_sorted, self.observed_correlation) #+1 # +1 because python indices start at 0
+            corrected_distr_sorted = np.sort(corrected_null_distribution)
+            n_val = len(corrected_distr_sorted) + 1
+            ind_obs_corr = n_val - np.searchsorted(corrected_distr_sorted, observed_correlation) #+1 # +1 because python indices start at 0
             # print(ind_obs)
             # tmp_ind_obs.append(ind_obs)
-            self.p_val_corr = self.ind_obs_corr / self.n_val
-            self.pvalues_corr.append(self.p_val_corr)
+            p_val_corr = ind_obs_corr / n_val
+            pvalues_corr.append(p_val_corr)
 
-        self.pvalues = np.asarray(self.pvalues)
-        self.pvalues_corr = np.asarray(self.pvalues_corr)
+        pvalues = np.asarray(pvalues)
+        pvalues_corr = np.asarray(pvalues_corr)
            
-        return self.pvalues, self.pvalues_corr
+        return pvalues, pvalues_corr
 
 
     def generate_null_distribution(self, input_vector, out_dir, n_perm_per_batch, n_batches, atlas_file):

@@ -1,3 +1,4 @@
 data/
 !data/parcellation_atlases/
 analysis/
+code/__pycache__/

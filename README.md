@@ -15,6 +15,13 @@ Two versions of the atlas are provided: zstats maps (includes overlap) and binar
 As the networks may overlap, the zstat atlas can be used as a probabilistic atlas. see [link] examples.
 
 
+Code to perform meta-analytic decoding is provided as a Jupyter notebook to allow full reproducibility.
+
+All packages required to run the code (except NiMare) are included in the in-house rsfMRI data analysis package neuroginius, that can be installed using pip:
+
+python -m pip install neuroginius
+
+
 <img src="images/rsn_lowlevel.png" alt="Example Image" width="750"/>
 
 

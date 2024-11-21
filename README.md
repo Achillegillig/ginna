@@ -19,8 +19,9 @@ Code to perform meta-analytic decoding is provided as a Jupyter notebook to allo
 
 All packages required to run the code (except NiMare) are included in the in-house rsfMRI data analysis package neuroginius, that can be installed using pip:
 
+```
 python -m pip install neuroginius
-
+```
 
 <img src="images/rsn_lowlevel.png" alt="Example Image" width="750"/>
 

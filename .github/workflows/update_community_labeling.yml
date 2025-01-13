@@ -1,6 +1,7 @@
 name: Update Voting Results
 
 on:
+  workflow_dispatch:  # Enables manual trigger
   schedule:
     - cron: "0 0 * * 0" # Weekly updates on Sunday
 

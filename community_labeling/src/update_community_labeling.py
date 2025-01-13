@@ -47,7 +47,8 @@ def update_voting_results(issues):
     """Update the voting results file."""
     results = {}
     for issue in issues:
-        if "labels" in issue and any(label["name"] in ["assessment", "proposal"] for label in issue["labels"]):
+        print(issue)
+        if "LABELING" in issue and any(label["name"] in ["assessment", "proposal"] for label in issue["labels"]):
             votes = summarize_votes(issue)
             results[issue["title"]] = {
                 "url": issue["html_url"],

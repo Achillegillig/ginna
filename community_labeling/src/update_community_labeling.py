@@ -54,7 +54,7 @@ def update_voting_results(issues):
                 "votes": votes
             }
 
-    output_file = "voting_results/voting_summary.json"
+    output_file = "community_labeling/voting_results/voting_summary.json"
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
     with open(output_file, "w") as f:
@@ -67,8 +67,6 @@ if __name__ == "__main__":
         print("Fetching issues...")
         if not TOKEN:
             raise ValueError("GITHUB_TOKEN environment variable is not set.")
-        else:
-            print(f"Using token: {TOKEN[:15]}...###REDACTED###")
         issues = fetch_issues()
         print("Summarizing votes...")
         update_voting_results(issues)

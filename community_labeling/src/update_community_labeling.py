@@ -6,6 +6,8 @@ from datetime import datetime
 # GitHub settings
 REPO = "Achillegillig/ginna" 
 TOKEN = os.getenv("GITHUB_TOKEN")
+if not TOKEN:
+    raise ValueError("GITHUB_TOKEN environment variable is not set.")
 API_URL = f"https://api.github.com/repos/{REPO}"
 
 HEADERS = {"Authorization": f"token {TOKEN}"}

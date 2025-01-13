@@ -63,12 +63,12 @@ def update_voting_results(issues):
     print(f"Voting results updated: {output_file}")
 
 if __name__ == "__main__":
-    if not TOKEN:
-        raise ValueError("GITHUB_TOKEN environment variable is not set.")
-    else:
-        print(f"Using token: {TOKEN[:15]}...###REDACTED###")
     try:
         print("Fetching issues...")
+        if not TOKEN:
+            raise ValueError("GITHUB_TOKEN environment variable is not set.")
+        else:
+            print(f"Using token: {TOKEN[:15]}...###REDACTED###")
         issues = fetch_issues()
         print("Summarizing votes...")
         update_voting_results(issues)

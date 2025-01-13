@@ -1,7 +1,7 @@
 # Resting-State Network Atlas: Labeling Initiative
 
 ## Overview
-Welcome to the community-driven initiative to refine and assess the labeling of 33 resting-state networks in the brain! This repository contains an atlas of networks with both **objective labels** derived from meta-analytic terms and **subjective labels** based on expert interpretation and PCA analysis.
+Welcome to the community-driven initiative to refine and assess the cognitive labeling of GINNA 33 resting-state networks ! This repository contains an atlas of networks with both **objective labels** derived from meta-analytic terms and **subjective labels** based on expert interpretation and PCA analysis.
 
 ## Goals
 1. Assess the proposed subjective labels.
@@ -18,20 +18,13 @@ Welcome to the community-driven initiative to refine and assess the labeling of 
 
 3. **Vote on Labels**:
    - Use GitHub reactions (`👍`, `👎`, `🧐`) on comments to vote.
+   - In addition to opening new labeling issues, feel free to comment on any existing one!
 
-## Files and Directories
+## Files and Directories (**work in progress**)
 - `data/`: Contains the atlas and descriptions.
 - `proposed_labels/`: Stores current labels with justifications.
 - `submissions/`: Community-submitted label proposals.
 - `voting_results/`: Summaries of voting outcomes.
 
 ## Proposal Template
-To propose a new label, open an issue and include:
-```markdown
-**Proposed Label**: [New Label]
-**Network ID**: [ID]
-**Justification**:
-- [Explain why this label is suitable, using evidence where applicable.]
-
-**References**:
-- [Cite relevant studies, datasets, or analyses.]
+To propose a new label and/or comment on existing labels, [open an issue with the label assignment template](../../issues/new?assignees=&labels=&projects=&template=label-assessment.md&title=%5BLABELING%5D+RSNXX+-+LABEL).

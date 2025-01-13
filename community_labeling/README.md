@@ -1,7 +1,7 @@
 # Resting-State Network Atlas: Labeling Initiative
 
 ## Overview
-Welcome to the community-driven initiative to refine and assess the labeling of 33 resting-state networks in the brain! This repository contains an atlas of networks with both **objective labels** derived from meta-analytic terms and **subjective labels** based on expert interpretation and PCA analysis.
+Welcome to the community-driven initiative to refine and assess the cognitive labeling of GINNA 33 resting-state networks ! This repository contains an atlas of networks with both **objective labels** derived from meta-analytic terms and **subjective labels** based on expert interpretation and PCA analysis.
 
 ## Goals
 1. Assess the proposed subjective labels.

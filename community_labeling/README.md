@@ -26,4 +26,4 @@ Welcome to the community-driven initiative to refine and assess the labeling of 
 - `voting_results/`: Summaries of voting outcomes.
 
 ## Proposal Template
-To propose a new label and/or comment on existing labels, [open an issue with the label assignment template](https://github.com/Achillegillig/ginna/issues/new?assignees=&labels=&projects=&template=label-assessment.md&title=%5BLABELING%5D+RSNXX+-+LABEL).
+To propose a new label and/or comment on existing labels, [open an issue with the label assignment template](../../issues/new?assignees=&labels=&projects=&template=label-assessment.md&title=%5BLABELING%5D+RSNXX+-+LABEL).

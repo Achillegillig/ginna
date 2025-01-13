@@ -4,8 +4,8 @@ import json
 from datetime import datetime
 
 # GitHub settings
-REPO = "username/repository"  # Replace with your repo name
-TOKEN = os.getenv("GITHUB_TOKEN")  # Set this in your environment
+REPO = "Achillegillig/ginna" 
+TOKEN = os.getenv("GITHUB_TOKEN")
 API_URL = f"https://api.github.com/repos/{REPO}"
 
 HEADERS = {"Authorization": f"token {TOKEN}"}

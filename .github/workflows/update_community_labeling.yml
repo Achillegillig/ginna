@@ -23,9 +23,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         python3 community_labeling/src/update_community_labeling.py
-
-    - name: Debug Environment
-      run: env
       
     - name: Commit and push updates
       run: |

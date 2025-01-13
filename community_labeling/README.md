@@ -19,7 +19,7 @@ Welcome to the community-driven initiative to refine and assess the labeling of 
 3. **Vote on Labels**:
    - Use GitHub reactions (`👍`, `👎`, `🧐`) on comments to vote.
 
-## Files and Directories
+## Files and Directories (**work in progress**)
 - `data/`: Contains the atlas and descriptions.
 - `proposed_labels/`: Stores current labels with justifications.
 - `submissions/`: Community-submitted label proposals.

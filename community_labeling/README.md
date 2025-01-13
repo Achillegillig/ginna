@@ -18,6 +18,7 @@ Welcome to the community-driven initiative to refine and assess the labeling of 
 
 3. **Vote on Labels**:
    - Use GitHub reactions (`👍`, `👎`, `🧐`) on comments to vote.
+   - In addition to opening new labeling issues, feel free to comment on any existing one!
 
 ## Files and Directories (**work in progress**)
 - `data/`: Contains the atlas and descriptions.

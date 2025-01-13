@@ -18,13 +18,15 @@ jobs:
         python3 -m pip install --upgrade pip
         python3 -m pip install requests
 
-
     - name: Generate voting summary
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         python3 community_labeling/src/update_community_labeling.py
 
+    - name: Debug Environment
+      run: env
+      
     - name: Commit and push updates
       run: |
         git config --global user.name "GitHub Actions"

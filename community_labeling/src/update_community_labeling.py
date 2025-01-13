@@ -6,10 +6,6 @@ from datetime import datetime
 # GitHub settings
 REPO = "Achillegillig/ginna" 
 TOKEN = os.getenv("GITHUB_TOKEN")
-if not TOKEN:
-    raise ValueError("GITHUB_TOKEN environment variable is not set.")
-else:
-    print(f"Using token: {TOKEN[:15]}...###REDACTED###")
 API_URL = f"https://api.github.com/repos/{REPO}"
 
 HEADERS = {"Authorization": f"token {TOKEN}"}
@@ -67,6 +63,10 @@ def update_voting_results(issues):
     print(f"Voting results updated: {output_file}")
 
 if __name__ == "__main__":
+    if not TOKEN:
+        raise ValueError("GITHUB_TOKEN environment variable is not set.")
+    else:
+        print(f"Using token: {TOKEN[:15]}...###REDACTED###")
     try:
         print("Fetching issues...")
         issues = fetch_issues()

@@ -15,6 +15,7 @@ labels: proposal
 ---
 
 ## Proposed Label
+- **RSN**: [RSN number (eg., RSN33)]
 - **New Label**: [Label]
 
 ## Justification

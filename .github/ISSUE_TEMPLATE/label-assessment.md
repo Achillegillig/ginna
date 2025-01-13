@@ -15,6 +15,7 @@ labels: assessment
 ---
 
 ## Current Subjective Label
+- **RSN**: [RSN number (eg, RSN33)]
 - **Label**: [Current Label]
 
 ## Your Assessment

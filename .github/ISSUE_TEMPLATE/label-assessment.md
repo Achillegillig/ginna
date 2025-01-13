@@ -1,6 +1,6 @@
 ---
 name: Label assessment
-about: Describe this issue template's purpose here.
+about: Assess quality of existing cognitive labels
 title: "[LABELING]"
 labels: ''
 assignees: ''

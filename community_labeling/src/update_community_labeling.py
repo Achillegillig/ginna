@@ -8,6 +8,8 @@ REPO = "Achillegillig/ginna"
 TOKEN = os.getenv("GITHUB_TOKEN")
 if not TOKEN:
     raise ValueError("GITHUB_TOKEN environment variable is not set.")
+else:
+    print(f"Using token: {TOKEN[:15]}...###REDACTED###")
 API_URL = f"https://api.github.com/repos/{REPO}"
 
 HEADERS = {"Authorization": f"token {TOKEN}"}

@@ -2,3 +2,6 @@ data/
 !data/parcellation_atlases/
 analysis/
 code/__pycache__
+
+.DS_Store
+*/*/.DS_Store

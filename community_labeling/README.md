@@ -14,7 +14,7 @@ Welcome to the community-driven initiative to refine and assess the cognitive la
    - Comment on existing issues for the network you want to assess.
 
 2. **Propose a New Label**:
-   - Use the provided [Proposal Template](#proposal-template) and open a new issue.
+   - Use the provided [Label Assignment Template](../../issues/new?assignees=&labels=&projects=&template=label-assessment.md&title=%5BLABELING%5D+RSNXX+-+LABEL) and open a new issue.
 
 3. **Vote on Labels**:
    - Use GitHub reactions (`👍`, `👎`, `🧐`) on comments to vote.

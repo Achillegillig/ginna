@@ -12,6 +12,10 @@ Two versions of the atlas are provided: zstats maps (includes overlap) and binar
 
 As the networks may overlap, the zstat atlas can be used as a probabilistic atlas. see [examples from nilearn](https://nilearn.github.io/dev/auto_examples/03_connectivity/plot_probabilistic_atlas_extraction.html).
 
+## community-driven cognitive labeling
+
+Summarizing a set of Neurosynth terms (e.g.: acoustic, comprehension, language) that were found significantly associated with each GINNA RSN is unarguably subjective and prone to errors.
+We would greatly value feedbacks from the community regardings the attributed labels! Feel free to comment on any label or propose new ones using the GitHub Issues system. see [here](/community_labeling).
 
 Code to perform meta-analytic decoding is provided as a Jupyter notebook to allow full reproducibility.
 

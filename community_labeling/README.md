@@ -10,13 +10,14 @@ Welcome to the community-driven initiative to refine and assess the cognitive la
 
 ## How to Contribute
 1. **Assess Labels**:
-   - Visit the [Issues](../../issues) tab.
+   - Visit the [Issues](../../../issues) tab.
    - Comment on existing issues for the network you want to assess.
 
 2. **Propose a New Label**:
-   - Use the provided [Label Assignment Template](../../issues/new?assignees=&labels=&projects=&template=label-assessment.md&title=%5BLABELING%5D+RSNXX+-+LABEL) and open a new issue.
+   - Visit the [Issues](../../../issues) tab.
+   - Use the provided **Label Assessment Template**
 
-3. **Vote on Labels**:
+4. **Vote on Labels**:
    - Use GitHub reactions (`👍`, `👎`, `🧐`) on comments to vote.
    - In addition to opening new labeling issues, feel free to comment on any existing one!
 
@@ -27,4 +28,4 @@ Welcome to the community-driven initiative to refine and assess the cognitive la
 - `voting_results/`: Summaries of voting outcomes.
 
 ## Label Assignment Template
-To propose a new label and/or comment on existing labels, [open an issue with the label assignment template](../../issues/new?assignees=&labels=&projects=&template=label-assessment.md&title=%5BLABELING%5D+RSNXX+-+LABEL).
+To propose a new label and/or comment on existing labels, [open an issue with the label assignment template](../../../issues/new?assignees=&labels=&projects=&template=label-assessment.md&title=%5BLABELING%5D+RSNXX+-+LABEL).

@@ -34,6 +34,8 @@ python -m pip install neuroginius
 
 <img src="images/rsn_highlevel.png" alt="Example Image" width="800"/>
 
+# Summary of attributed cognitive processes for each RSN
+
 | RSN   | Anatomical label   | Cognitive label (Cognitive Atlas ontology)   |
 |:------|:-------------------|:---------------------------------------------|
 | RSN01 | pCing-medPN        | n.s.                                         |

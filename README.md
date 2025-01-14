@@ -1,5 +1,5 @@
-# ginna
-GINNA: An atlas of 33 resting-state networks with empirical cognitive labelling
+# GINNA: An atlas of 33 resting-state networks with empirical cognitive labelling
+
 
 The Groupe d'Imagerie Neurofonctionnelle Network Atlas (GINNA) is a resting-state atlas that comprises 33 resting-state networks (RSNs). 
 
@@ -12,10 +12,12 @@ Two versions of the atlas are provided: zstats maps (includes overlap) and binar
 
 As the networks may overlap, the zstat atlas can be used as a probabilistic atlas. see [examples from nilearn](https://nilearn.github.io/dev/auto_examples/03_connectivity/plot_probabilistic_atlas_extraction.html).
 
-## community-driven cognitive labeling
+# community-driven cognitive labeling
 
 Summarizing a set of Neurosynth terms (e.g.: acoustic, comprehension, language) that were found significantly associated with each GINNA RSN is unarguably subjective and prone to errors.
 We would greatly value feedbacks from the community regardings the attributed labels! Feel free to comment on any label or propose new ones using the GitHub Issues system. see [here](/community_labeling).
+
+# Reproducibility 
 
 Code to perform meta-analytic decoding is provided as a Jupyter notebook to allow full reproducibility.
 
@@ -24,6 +26,7 @@ All packages required to run the code (except NiMare) are included in the in-hou
 ```
 python -m pip install neuroginius
 ```
+# The GINNA Atlas
 
 <img src="images/rsn_lowlevel.png" alt="Example Image" width="750"/>
 

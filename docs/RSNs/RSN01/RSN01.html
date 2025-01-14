@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             height: 100vh;
+            color: #333;
         }
         .left {
             flex: 1;
@@ -24,6 +25,8 @@
             flex: 1;
             padding: 20px;
             overflow-y: auto;
+            background-color: #ffffff;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
         }
         .image-container img {
             max-width: 100%;
@@ -35,39 +38,54 @@
             margin-top: 20px;
         }
         .label-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
             margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
         .label-item .label-text {
-            flex: 1;
+            font-weight: bold;
+            margin-bottom: 5px;
         }
-        .label-item .actions {
-            display: flex;
-            gap: 10px;
-        }
-        .actions button {
-            padding: 5px 10px;
-            cursor: pointer;
+        .label-item .author {
+            font-size: 0.9em;
+            color: #555;
         }
         .new-label {
             margin-top: 30px;
-            border-top: 1px solid #ccc;
+            border-top: 1px solid #ddd;
             padding-top: 20px;
         }
         .new-label input {
-            width: calc(100% - 100px);
+            width: 100%;
             padding: 10px;
-            margin-right: 10px;
+            margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .new-label textarea {
+            width: 100%;
+            height: 80px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            resize: none;
         }
         .new-label button {
             padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .new-label button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -75,84 +93,84 @@
     <!-- Left Section -->
     <div class="left">
         <div class="image-container">
-            <img src="../../community_labeling/decoding_results/RSN01.png" alt="RSN Image">
+            <img src="/community_labeling/decoding_results/RSN01.png" alt="RSN Image">
         </div>
     </div>
 
     <!-- Right Section -->
     <div class="right">
         <h1>RSN01 - Cognitive Labels</h1>
-        <div class="cognitive-labels">
-            <!-- List of labels -->
-            <div class="label-item">
-                <div class="label-text">Memory Conservation</div>
-                <div class="actions">
-                    <button onclick="upvote(this)">👍</button>
-                    <button onclick="downvote(this)">👎</button>
-                    <button onclick="comment(this)">💬</button>
-                </div>
-            </div>
-            <div class="label-item">
-                <div class="label-text">Memory Encoding</div>
-                <div class="actions">
-                    <button onclick="upvote(this)">👍</button>
-                    <button onclick="downvote(this)">👎</button>
-                    <button onclick="comment(this)">💬</button>
-                </div>
-            </div>
+        <div class="cognitive-labels" id="cognitiveLabels">
+            <!-- Labels will be dynamically loaded here -->
         </div>
 
         <!-- Add new label -->
         <div class="new-label">
             <h3>Propose a New Cognitive Label</h3>
-            <input type="text" id="newLabelInput" placeholder="Enter new label here">
+            <input type="text" id="labelInput" placeholder="Enter new label here">
+            <textarea id="commentInput" placeholder="Enter additional details or comments"></textarea>
+            <input type="text" id="authorInput" placeholder="Your name">
             <button onclick="addNewLabel()">Submit</button>
         </div>
     </div>
 
     <script>
-        // Function to handle upvotes
-        function upvote(button) {
-            alert('You upvoted!');
-        }
+        // Function to fetch labels from a text file
+        async function fetchLabels() {
+            try {
+                const response = await fetch('labels.txt'); // Adjust file path as needed
+                const text = await response.text();
+                const lines = text.trim().split('\n');
 
-        // Function to handle downvotes
-        function downvote(button) {
-            alert('You downvoted!');
-        }
+                const cognitiveLabelsDiv = document.getElementById('cognitiveLabels');
+                lines.forEach(line => {
+                    const [label, author] = line.split('|'); // Assuming "|" separates label and author
 
-        // Function to add comments
-        function comment(button) {
-            const comment = prompt('Enter your comment:');
-            if (comment) {
-                alert(`Comment added: ${comment}`);
+                    const labelDiv = document.createElement('div');
+                    labelDiv.className = 'label-item';
+                    labelDiv.innerHTML = `
+                        <div class="label-text">${label.trim()}</div>
+                        <div class="author">By: ${author ? author.trim() : 'Unknown'}</div>
+                    `;
+                    cognitiveLabelsDiv.appendChild(labelDiv);
+                });
+            } catch (error) {
+                console.error('Error fetching labels:', error);
             }
         }
 
+        // Call fetchLabels on page load
+        fetchLabels();
+
         // Function to add a new cognitive label
         function addNewLabel() {
-            const newLabelInput = document.getElementById('newLabelInput');
-            const newLabelText = newLabelInput.value.trim();
+            const labelInput = document.getElementById('labelInput');
+            const commentInput = document.getElementById('commentInput');
+            const authorInput = document.getElementById('authorInput');
 
-            if (newLabelText) {
-                // Add the new label dynamically
-                const cognitiveLabelsDiv = document.querySelector('.cognitive-labels');
-                const newLabelDiv = document.createElement('div');
-                newLabelDiv.className = 'label-item';
+            const labelText = labelInput.value.trim();
+            const commentText = commentInput.value.trim();
+            const authorText = authorInput.value.trim();
 
-                newLabelDiv.innerHTML = `
-                    <div class="label-text">${newLabelText}</div>
-                    <div class="actions">
-                        <button onclick="upvote(this)">👍</button>
-                        <button onclick="downvote(this)">👎</button>
-                        <button onclick="comment(this)">💬</button>
-                    </div>
+            if (labelText && authorText) {
+                const cognitiveLabelsDiv = document.getElementById('cognitiveLabels');
+
+                const labelDiv = document.createElement('div');
+                labelDiv.className = 'label-item';
+                labelDiv.innerHTML = `
+                    <div class="label-text">${labelText}</div>
+                    <div class="author">By: ${authorText}</div>
+                    <div class="comment">${commentText}</div>
                 `;
 
-                cognitiveLabelsDiv.appendChild(newLabelDiv);
-                newLabelInput.value = ''; // Clear input
+                cognitiveLabelsDiv.appendChild(labelDiv);
+
+                // Clear inputs
+                labelInput.value = '';
+                commentInput.value = '';
+                authorInput.value = '';
             } else {
-                alert('Please enter a label!');
+                alert('Please enter a label and author name!');
             }
         }
     </script>

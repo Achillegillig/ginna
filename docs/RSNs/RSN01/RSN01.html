@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSN Template</title>
+    <style>
+        body {
+            display: flex;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        .left {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .right {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+        .cognitive-labels {
+            margin-top: 20px;
+        }
+        .label-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .label-item .label-text {
+            flex: 1;
+        }
+        .label-item .actions {
+            display: flex;
+            gap: 10px;
+        }
+        .actions button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .new-label {
+            margin-top: 30px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+        .new-label input {
+            width: calc(100% - 100px);
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .new-label button {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Left Section -->
+    <div class="left">
+        <div class="image-container">
+            <img src="../community_labeling/decoding_results/RSN01.png" alt="RSN Image">
+        </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right">
+        <h1>RSN01 - Cognitive Labels</h1>
+        <div class="cognitive-labels">
+            <!-- List of labels -->
+            <div class="label-item">
+                <div class="label-text">Memory Conservation</div>
+                <div class="actions">
+                    <button onclick="upvote(this)">👍</button>
+                    <button onclick="downvote(this)">👎</button>
+                    <button onclick="comment(this)">💬</button>
+                </div>
+            </div>
+            <div class="label-item">
+                <div class="label-text">Memory Encoding</div>
+                <div class="actions">
+                    <button onclick="upvote(this)">👍</button>
+                    <button onclick="downvote(this)">👎</button>
+                    <button onclick="comment(this)">💬</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add new label -->
+        <div class="new-label">
+            <h3>Propose a New Cognitive Label</h3>
+            <input type="text" id="newLabelInput" placeholder="Enter new label here">
+            <button onclick="addNewLabel()">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to handle upvotes
+        function upvote(button) {
+            alert('You upvoted!');
+        }
+
+        // Function to handle downvotes
+        function downvote(button) {
+            alert('You downvoted!');
+        }
+
+        // Function to add comments
+        function comment(button) {
+            const comment = prompt('Enter your comment:');
+            if (comment) {
+                alert(`Comment added: ${comment}`);
+            }
+        }
+
+        // Function to add a new cognitive label
+        function addNewLabel() {
+            const newLabelInput = document.getElementById('newLabelInput');
+            const newLabelText = newLabelInput.value.trim();
+
+            if (newLabelText) {
+                // Add the new label dynamically
+                const cognitiveLabelsDiv = document.querySelector('.cognitive-labels');
+                const newLabelDiv = document.createElement('div');
+                newLabelDiv.className = 'label-item';
+
+                newLabelDiv.innerHTML = `
+                    <div class="label-text">${newLabelText}</div>
+                    <div class="actions">
+                        <button onclick="upvote(this)">👍</button>
+                        <button onclick="downvote(this)">👎</button>
+                        <button onclick="comment(this)">💬</button>
+                    </div>
+                `;
+
+                cognitiveLabelsDiv.appendChild(newLabelDiv);
+                newLabelInput.value = ''; // Clear input
+            } else {
+                alert('Please enter a label!');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -25,11 +25,11 @@ Welcome to the community-driven initiative to refine and assess the cognitive la
    1. **Access the [detailed results of the target RSN](/decoding_results)**. Each file contains a) a representation of the RSN, b) the terms significantly associated with the RSN (if none, corresponding p-values are reported as a table), c) results of a Principal Component analysis (two first PCs) on the terms space and d) on the RSN space (see article for more details).
 
    2. **Evaluate the potential cognitive process(es) that the decoded terms represent.**
-      Make sure to use:
+Make sure to use:
         - The whole set of significantly associated terms
         - The strength of the association between each tearm and the RSN (Pearson r)
         - The results of the PCA (terms with comparable activation profile share a high loading on a same PC).
-      **Be careful not to**:
+**Be careful not to**:
          - Deduce a cognitive process from the RSN topology (reverse inference)
          -  over-interpret the meaning of Neurosynth terms (you can inspect the studies that load the most on any meta-analytic map from the [Neurosynth Studies tab](https://www.neurosynth.org/analyses/terms/face)
            

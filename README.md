@@ -15,7 +15,10 @@ As the networks may overlap, the zstat atlas can be used as a probabilistic atla
 # Community-driven cognitive labeling
 
 Summarizing a set of Neurosynth terms (e.g.: acoustic, comprehension, language) that were found significantly associated with each GINNA RSN is unarguably subjective and prone to errors.
-We would greatly value feedbacks from the community regardings the attributed labels! Feel free to comment on any label or propose new ones using the GitHub Issues system. see [here](/community_labeling).
+
+For this reason, we are working towards a collaborative platform that would allow to collect experts judgements on the cognitive process(es) that best summarize the terms attributed to each RSN.
+
+In the meantime, we would still greatly value feedbacks from the community regardings the attributed labels! Feel free to comment on any label or propose new ones using the GitHub Issues system. see [here](/docs/community_labeling).
 
 # Reproducibility 
 

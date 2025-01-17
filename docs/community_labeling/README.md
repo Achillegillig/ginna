@@ -22,7 +22,7 @@ Welcome to the community-driven initiative to refine and assess the cognitive la
    - In addition to opening new labeling issues, feel free to comment on any existing one!
 
 ## Instructions for assigning a cognitive label
-   1. **Access the [detailed results of the target RSN](/decoding_results)**. Each file contains a) a representation of the RSN, b) the terms significantly associated with the RSN (if none, corresponding p-values are reported as a table), c) results of a Principal Component analysis (two first PCs) on the terms space and d) on the RSN space (see article for more details).
+   1. **Access the [detailed results of the target RSN](/docs/community_labeling/decoding_results)**. Each file contains a) a representation of the RSN, b) the terms significantly associated with the RSN (if none, corresponding p-values are reported as a table), c) results of a Principal Component analysis (two first PCs) on the terms space and d) on the RSN space (see article for more details).
 
    2. **Evaluate the potential cognitive process(es) that the decoded terms represent.**
 Make sure to use:

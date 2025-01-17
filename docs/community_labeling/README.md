@@ -15,7 +15,7 @@ Welcome to the community-driven initiative to refine and assess the cognitive la
 
 2. **Propose a New Label**:
    - Visit the [Issues](../../../issues) tab.
-   - Use the provided [**Label Assessment Template**]((../../../issues/new?assignees=&labels=&projects=&template=label-assessment.md&title=%5BLABELING%5D+RSNXX+-+LABEL))
+   - Use the provided **Label Assessment Template**
 
 3. **Vote on Labels**:
    - Use GitHub reactions (`👍`, `👎`, `🧐`) on comments to vote.
@@ -40,10 +40,7 @@ Make sure to use:
       
 
 ## Files and Directories (**work in progress**)
-- `data/`: Contains the atlas and descriptions.
+- `decoding_results/`: Detailed results for each GINNA RSN.
 - `proposed_labels/`: Stores current labels with justifications.
 - `submissions/`: Community-submitted label proposals.
 - `voting_results/`: Summaries of voting outcomes.
-
-## Label Assignment Template
-To propose a new label and/or comment on existing labels, [open an issue with the label assignment template](../../../issues/new?assignees=&labels=&projects=&template=label-assessment.md&title=%5BLABELING%5D+RSNXX+-+LABEL).

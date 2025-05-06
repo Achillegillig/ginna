@@ -6,7 +6,7 @@ The Groupe d'Imagerie Neurofonctionnelle Network Atlas (GINNA) is a resting-stat
 Each network has been evaluated with respect to its cognitive profile using a meta-analytic decoding strategy that rests on Neurosynth.
 Each network is provided with a suggested cognitive label, as determined to faithfully summarize the results of the decoding by 6 independent neuroimaging experts. 
 
-More details are available in the [preprint](https://doi.org/10.21203/rs.3.rs-4803512/v1)
+More details are available in the [publication](https://www.nature.com/articles/s42003-025-07671-2)
 
 Two versions of the atlas are provided: zstats maps (includes overlap) and binary maps (no overlap between networks). 
 

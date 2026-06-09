@@ -8,9 +8,16 @@ Each network is provided with a suggested cognitive label, as determined to fait
 
 More details are available in the [publication](https://www.nature.com/articles/s42003-025-07671-2)
 
-Two versions of the atlas are provided: zstats maps (includes overlap) and binary maps (no overlap between networks). 
-
+Two versions of the atlas are provided: 
+ 
+## GINNA-RSN-Overlap: Original GINNA atlas
+Voxel-level maps of each individual GINNA network. Available a zscore or binary maps [here](/atlas/GINNA-RSN-Overlap)
 As the networks may overlap, the zstat atlas can be used as a probabilistic atlas. see [examples from nilearn](https://nilearn.github.io/dev/auto_examples/03_connectivity/plot_probabilistic_atlas_extraction.html).
+
+## GINNA-HardParc-443: region-level, non-overlapping parcellation of the GINNA networks
+Parcellation into 443 regions, each one assigned to 1 GINNA network. Accessible [here](/atlas/GINNA-HardParc-443)
+This version is well-suited for functional connectivity analyses such as functional connectivity prediction of behavior.
+
 
 # Community-driven cognitive labeling
 

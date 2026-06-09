@@ -11,12 +11,12 @@ More details are available in the [publication](https://www.nature.com/articles/
 Two versions of the atlas are provided: 
  
 ## GINNA-RSN-Overlap: Original GINNA atlas
-Voxel-level maps of each individual GINNA network. Available a zscore or binary maps [here](/atlas/GINNA-RSN-Overlap)
+Voxel-level maps of each individual GINNA network. Available as zscore or binary maps [here](/atlas/GINNA-RSN-Overlap)
 
 
 <p align="center">
-  <img src="images/rsn_lowlevel.png" alt="Low-level RSNs" width="450"/>
-  <img src="images/rsn_highlevel.png" alt="High-level RSNs" width="450"/>
+  <img src="images/rsn_lowlevel.png" alt="Low-level RSNs" width="300"/>
+  <img src="images/rsn_highlevel.png" alt="High-level RSNs" width="300"/>
 </p>
 
 

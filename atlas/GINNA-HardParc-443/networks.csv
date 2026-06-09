@@ -1,0 +1,444 @@
+index,networks,anat_label,Cognitive Atlas label
+1,RSN01,pCing-medPN,n.s.
+2,RSN01,pCing-medPN,n.s.
+3,RSN01,pCing-medPN,n.s.
+4,RSN01,pCing-medPN,n.s.
+5,RSN01,pCing-medPN,n.s.
+6,RSN01,pCing-medPN,n.s.
+7,RSN01,pCing-medPN,n.s.
+8,RSN01,pCing-medPN,n.s.
+9,RSN01,pCing-medPN,n.s.
+10,RSN01,pCing-medPN,n.s.
+11,RSN01,pCing-medPN,n.s.
+12,RSN09,ON-01,visual perception
+13,RSN09,ON-01,visual perception
+14,RSN09,ON-01,visual perception
+15,RSN09,ON-01,visual perception
+16,RSN09,ON-01,visual perception
+17,RSN04,PcN-02,articulation
+18,RSN04,PcN-02,articulation
+19,RSN04,PcN-02,articulation
+20,RSN04,PcN-02,articulation
+21,RSN13,aCingN,decision making
+22,RSN13,aCingN,decision making
+23,RSN13,aCingN,decision making
+24,RSN13,aCingN,decision making
+25,RSN13,aCingN,decision making
+26,RSN13,aCingN,decision making
+27,RSN13,aCingN,decision making
+28,RSN15,L-FTN,syntactic processing
+29,RSN15,L-FTN,syntactic processing
+30,RSN15,L-FTN,syntactic processing
+31,RSN15,L-FTN,syntactic processing
+32,RSN15,L-FTN,syntactic processing
+33,RSN15,L-FTN,syntactic processing
+34,RSN15,L-FTN,syntactic processing
+35,RSN15,L-FTN,syntactic processing
+36,RSN15,L-FTN,syntactic processing
+37,RSN15,L-FTN,syntactic processing
+38,RSN11,PcN-03,somatosensation
+39,RSN11,PcN-03,somatosensation
+40,RSN11,PcN-03,somatosensation
+41,RSN11,PcN-03,somatosensation
+42,RSN11,PcN-03,somatosensation
+43,RSN11,PcN-03,somatosensation
+44,RSN11,PcN-03,somatosensation
+45,RSN11,PcN-03,somatosensation
+46,RSN11,PcN-03,somatosensation
+47,RSN11,PcN-03,somatosensation
+48,RSN11,PcN-03,somatosensation
+49,RSN11,PcN-03,somatosensation
+50,RSN11,PcN-03,somatosensation
+51,RSN11,PcN-03,somatosensation
+52,RSN11,PcN-03,somatosensation
+53,RSN30,D-FPN-02,motor imagery
+54,RSN30,D-FPN-02,motor imagery
+55,RSN30,D-FPN-02,motor imagery
+56,RSN30,D-FPN-02,motor imagery
+57,RSN30,D-FPN-02,motor imagery
+58,RSN30,D-FPN-02,motor imagery
+59,RSN30,D-FPN-02,motor imagery
+60,RSN30,D-FPN-02,motor imagery
+61,RSN25,R-PcN,movement (left hand)
+62,RSN25,R-PcN,movement (left hand)
+63,RSN25,R-PcN,movement (left hand)
+64,RSN25,R-PcN,movement (left hand)
+65,RSN25,R-PcN,movement (left hand)
+66,RSN25,R-PcN,movement (left hand)
+67,RSN25,R-PcN,movement (left hand)
+68,RSN21,L-PcN,movement (right hand)
+69,RSN21,L-PcN,movement (right hand)
+70,RSN21,L-PcN,movement (right hand)
+71,RSN21,L-PcN,movement (right hand)
+72,RSN21,L-PcN,movement (right hand)
+73,RSN21,L-PcN,movement (right hand)
+74,RSN21,L-PcN,movement (right hand)
+75,RSN28,med-FN,theory of mind
+76,RSN28,med-FN,theory of mind
+77,RSN28,med-FN,theory of mind
+78,RSN28,med-FN,theory of mind
+79,RSN28,med-FN,theory of mind
+80,RSN28,med-FN,theory of mind
+81,RSN28,med-FN,theory of mind
+82,RSN28,med-FN,theory of mind
+83,RSN28,med-FN,theory of mind
+84,RSN28,med-FN,theory of mind
+85,RSN28,med-FN,theory of mind
+86,RSN20,R-FTPN-02,mental arithmetic
+87,RSN20,R-FTPN-02,mental arithmetic
+88,RSN20,R-FTPN-02,mental arithmetic
+89,RSN20,R-FTPN-02,mental arithmetic
+90,RSN20,R-FTPN-02,mental arithmetic
+91,RSN20,R-FTPN-02,mental arithmetic
+92,RSN20,R-FTPN-02,mental arithmetic
+93,RSN17,R-FTPN-01,"self monitoring, theory of mind"
+94,RSN17,R-FTPN-01,"self monitoring, theory of mind"
+95,RSN17,R-FTPN-01,"self monitoring, theory of mind"
+96,RSN17,R-FTPN-01,"self monitoring, theory of mind"
+97,RSN17,R-FTPN-01,"self monitoring, theory of mind"
+98,RSN17,R-FTPN-01,"self monitoring, theory of mind"
+99,RSN17,R-FTPN-01,"self monitoring, theory of mind"
+100,RSN17,R-FTPN-01,"self monitoring, theory of mind"
+101,RSN17,R-FTPN-01,"self monitoring, theory of mind"
+102,RSN17,R-FTPN-01,"self monitoring, theory of mind"
+103,RSN08,D-FPN-03,spatial selective attention
+104,RSN08,D-FPN-03,spatial selective attention
+105,RSN08,D-FPN-03,spatial selective attention
+106,RSN08,D-FPN-03,spatial selective attention
+107,RSN08,D-FPN-03,spatial selective attention
+108,RSN08,D-FPN-03,spatial selective attention
+109,RSN32,OTN,object perception
+110,RSN32,OTN,object perception
+111,RSN32,OTN,object perception
+112,RSN32,OTN,object perception
+113,RSN32,OTN,object perception
+114,RSN32,OTN,object perception
+115,RSN32,OTN,object perception
+116,RSN32,OTN,object perception
+117,RSN32,OTN,object perception
+118,RSN05,med-TN,memory retrieval
+119,RSN05,med-TN,memory retrieval
+120,RSN05,med-TN,memory retrieval
+121,RSN05,med-TN,memory retrieval
+122,RSN05,med-TN,memory retrieval
+123,RSN05,med-TN,memory retrieval
+124,RSN05,med-TN,memory retrieval
+125,RSN05,med-TN,memory retrieval
+126,RSN05,med-TN,memory retrieval
+127,RSN05,med-TN,memory retrieval
+128,RSN05,med-TN,memory retrieval
+129,RSN05,med-TN,memory retrieval
+130,RSN05,med-TN,memory retrieval
+131,RSN05,med-TN,memory retrieval
+132,RSN07,med-FPN,self-referential processing
+133,RSN07,med-FPN,self-referential processing
+134,RSN07,med-FPN,self-referential processing
+135,RSN07,med-FPN,self-referential processing
+136,RSN07,med-FPN,self-referential processing
+137,RSN07,med-FPN,self-referential processing
+138,RSN07,med-FPN,self-referential processing
+139,RSN07,med-FPN,self-referential processing
+140,RSN07,med-FPN,self-referential processing
+141,RSN07,med-FPN,self-referential processing
+142,RSN07,med-FPN,self-referential processing
+143,RSN07,med-FPN,self-referential processing
+144,RSN07,med-FPN,self-referential processing
+145,RSN07,med-FPN,self-referential processing
+146,RSN07,med-FPN,self-referential processing
+147,RSN07,med-FPN,self-referential processing
+148,RSN07,med-FPN,self-referential processing
+149,RSN02,R-FTPN-03,n.s.
+150,RSN02,R-FTPN-03,n.s.
+151,RSN02,R-FTPN-03,n.s.
+152,RSN02,R-FTPN-03,n.s.
+153,RSN02,R-FTPN-03,n.s.
+154,RSN02,R-FTPN-03,n.s.
+155,RSN29,ON-02,visual form discrimination
+156,RSN29,ON-02,visual form discrimination
+157,RSN06,PcN-01,movement (limb)
+158,RSN06,PcN-01,movement (limb)
+159,RSN06,PcN-01,movement (limb)
+160,RSN06,PcN-01,movement (limb)
+161,RSN06,PcN-01,movement (limb)
+162,RSN06,PcN-01,movement (limb)
+163,RSN06,PcN-01,movement (limb)
+164,RSN06,PcN-01,movement (limb)
+165,RSN06,PcN-01,movement (limb)
+166,RSN06,PcN-01,movement (limb)
+167,RSN06,PcN-01,movement (limb)
+168,RSN06,PcN-01,movement (limb)
+169,RSN06,PcN-01,movement (limb)
+170,RSN06,PcN-01,movement (limb)
+171,RSN06,PcN-01,movement (limb)
+172,RSN06,PcN-01,movement (limb)
+173,RSN06,PcN-01,movement (limb)
+174,RSN31,R-FInsN,interference resolution
+175,RSN31,R-FInsN,interference resolution
+176,RSN31,R-FInsN,interference resolution
+177,RSN31,R-FInsN,interference resolution
+178,RSN31,R-FInsN,interference resolution
+179,RSN31,R-FInsN,interference resolution
+180,RSN31,R-FInsN,interference resolution
+181,RSN31,R-FInsN,interference resolution
+182,RSN31,R-FInsN,interference resolution
+183,RSN31,R-FInsN,interference resolution
+184,RSN31,R-FInsN,interference resolution
+185,RSN19,L-FTPN-01,sentence comprehension
+186,RSN19,L-FTPN-01,sentence comprehension
+187,RSN19,L-FTPN-01,sentence comprehension
+188,RSN19,L-FTPN-01,sentence comprehension
+189,RSN19,L-FTPN-01,sentence comprehension
+190,RSN19,L-FTPN-01,sentence comprehension
+191,RSN19,L-FTPN-01,sentence comprehension
+192,RSN19,L-FTPN-01,sentence comprehension
+193,RSN19,L-FTPN-01,sentence comprehension
+194,RSN19,L-FTPN-01,sentence comprehension
+195,RSN19,L-FTPN-01,sentence comprehension
+196,RSN14,TN-01,auditory perception
+197,RSN14,TN-01,auditory perception
+198,RSN14,TN-01,auditory perception
+199,RSN14,TN-01,auditory perception
+200,RSN14,TN-01,auditory perception
+201,RSN14,TN-01,auditory perception
+202,RSN14,TN-01,auditory perception
+203,RSN14,TN-01,auditory perception
+204,RSN14,TN-01,auditory perception
+205,RSN14,TN-01,auditory perception
+206,RSN14,TN-01,auditory perception
+207,RSN23,L-InsFPN,phonological working memory
+208,RSN23,L-InsFPN,phonological working memory
+209,RSN23,L-InsFPN,phonological working memory
+210,RSN23,L-InsFPN,phonological working memory
+211,RSN23,L-InsFPN,phonological working memory
+212,RSN23,L-InsFPN,phonological working memory
+213,RSN23,L-InsFPN,phonological working memory
+214,RSN23,L-InsFPN,phonological working memory
+215,RSN23,L-InsFPN,phonological working memory
+216,RSN23,L-InsFPN,phonological working memory
+217,RSN23,L-InsFPN,phonological working memory
+218,RSN23,L-InsFPN,phonological working memory
+219,RSN12,L-FTPN-02,reasoning
+220,RSN12,L-FTPN-02,reasoning
+221,RSN12,L-FTPN-02,reasoning
+222,RSN12,L-FTPN-02,reasoning
+223,RSN12,L-FTPN-02,reasoning
+224,RSN12,L-FTPN-02,reasoning
+225,RSN26,ON-03,n.s.
+226,RSN26,ON-03,n.s.
+227,RSN26,ON-03,n.s.
+228,RSN26,ON-03,n.s.
+229,RSN26,ON-03,n.s.
+230,RSN26,ON-03,n.s.
+231,RSN26,ON-03,n.s.
+232,RSN26,ON-03,n.s.
+233,RSN26,ON-03,n.s.
+234,RSN22,mCingInsN,performance monitoring
+235,RSN22,mCingInsN,performance monitoring
+236,RSN22,mCingInsN,performance monitoring
+237,RSN22,mCingInsN,performance monitoring
+238,RSN22,mCingInsN,performance monitoring
+239,RSN22,mCingInsN,performance monitoring
+240,RSN22,mCingInsN,performance monitoring
+241,RSN22,mCingInsN,performance monitoring
+242,RSN22,mCingInsN,performance monitoring
+243,RSN16,mCingFPN,working memory
+244,RSN16,mCingFPN,working memory
+245,RSN16,mCingFPN,working memory
+246,RSN16,mCingFPN,working memory
+247,RSN16,mCingFPN,working memory
+248,RSN16,mCingFPN,working memory
+249,RSN16,mCingFPN,working memory
+250,RSN16,mCingFPN,working memory
+251,RSN16,mCingFPN,working memory
+252,RSN16,mCingFPN,working memory
+253,RSN16,mCingFPN,working memory
+254,RSN33,TN-02,speech perception
+255,RSN33,TN-02,speech perception
+256,RSN33,TN-02,speech perception
+257,RSN33,TN-02,speech perception
+258,RSN33,TN-02,speech perception
+259,RSN33,TN-02,speech perception
+260,RSN33,TN-02,speech perception
+261,RSN33,TN-02,speech perception
+262,RSN33,TN-02,speech perception
+263,RSN33,TN-02,speech perception
+264,RSN33,TN-02,speech perception
+265,RSN33,TN-02,speech perception
+266,RSN33,TN-02,speech perception
+267,RSN18,FTPN-01,expectancy
+268,RSN18,FTPN-01,expectancy
+269,RSN18,FTPN-01,expectancy
+270,RSN18,FTPN-01,expectancy
+271,RSN18,FTPN-01,expectancy
+272,RSN18,FTPN-01,expectancy
+273,RSN18,FTPN-01,expectancy
+274,RSN18,FTPN-01,expectancy
+275,RSN18,FTPN-01,expectancy
+276,RSN18,FTPN-01,expectancy
+277,RSN18,FTPN-01,expectancy
+278,RSN18,FTPN-01,expectancy
+279,RSN18,FTPN-01,expectancy
+280,RSN18,FTPN-01,expectancy
+281,RSN10,D-FPN-01,motor planning
+282,RSN10,D-FPN-01,motor planning
+283,RSN10,D-FPN-01,motor planning
+284,RSN10,D-FPN-01,motor planning
+285,RSN10,D-FPN-01,motor planning
+286,RSN10,D-FPN-01,motor planning
+287,RSN10,D-FPN-01,motor planning
+288,RSN10,D-FPN-01,motor planning
+289,RSN10,D-FPN-01,motor planning
+290,RSN10,D-FPN-01,motor planning
+291,RSN10,D-FPN-01,motor planning
+292,RSN03,ON-04,"motion detection, visual object recognition"
+293,RSN03,ON-04,"motion detection, visual object recognition"
+294,RSN03,ON-04,"motion detection, visual object recognition"
+295,RSN03,ON-04,"motion detection, visual object recognition"
+296,RSN03,ON-04,"motion detection, visual object recognition"
+297,RSN03,ON-04,"motion detection, visual object recognition"
+298,RSN03,ON-04,"motion detection, visual object recognition"
+299,RSN03,ON-04,"motion detection, visual object recognition"
+300,RSN27,FTPN-02,"reading, mental arithmetic"
+301,RSN27,FTPN-02,"reading, mental arithmetic"
+302,RSN27,FTPN-02,"reading, mental arithmetic"
+303,RSN27,FTPN-02,"reading, mental arithmetic"
+304,RSN27,FTPN-02,"reading, mental arithmetic"
+305,RSN27,FTPN-02,"reading, mental arithmetic"
+306,RSN27,FTPN-02,"reading, mental arithmetic"
+307,RSN27,FTPN-02,"reading, mental arithmetic"
+308,RSN27,FTPN-02,"reading, mental arithmetic"
+309,RSN27,FTPN-02,"reading, mental arithmetic"
+310,RSN27,FTPN-02,"reading, mental arithmetic"
+311,RSN27,FTPN-02,"reading, mental arithmetic"
+312,RSN27,FTPN-02,"reading, mental arithmetic"
+313,RSN27,FTPN-02,"reading, mental arithmetic"
+314,RSN27,FTPN-02,"reading, mental arithmetic"
+315,RSN27,FTPN-02,"reading, mental arithmetic"
+316,RSN27,FTPN-02,"reading, mental arithmetic"
+317,RSN24,BGN,reward anticipation
+318,RSN24,BGN,reward anticipation
+319,RSN24,BGN,reward anticipation
+320,RSN24,BGN,reward anticipation
+321,RSN24,BGN,reward anticipation
+322,RSN24,BGN,reward anticipation
+323,RSN24,BGN,reward anticipation
+324,RSN24,BGN,reward anticipation
+325,RSN24,BGN,reward anticipation
+326,RSN24,BGN,reward anticipation
+327,RSN09,ON-01,visual perception
+328,RSN09,ON-01,visual perception
+329,RSN04,PcN-02,articulation
+330,RSN04,PcN-02,articulation
+331,RSN04,PcN-02,articulation
+332,RSN04,PcN-02,articulation
+333,RSN15,L-FTN,syntactic processing
+334,RSN15,L-FTN,syntactic processing
+335,RSN25,R-PcN,movement (left hand)
+336,RSN21,L-PcN,movement (right hand)
+337,RSN21,L-PcN,movement (right hand)
+338,RSN32,OTN,object perception
+339,RSN06,PcN-01,movement (limb)
+340,RSN06,PcN-01,movement (limb)
+341,RSN06,PcN-01,movement (limb)
+342,RSN06,PcN-01,movement (limb)
+343,RSN06,PcN-01,movement (limb)
+344,RSN31,R-FInsN,interference resolution
+345,RSN23,L-InsFPN,phonological working memory
+346,RSN16,mCingFPN,working memory
+347,RSN16,mCingFPN,working memory
+348,RSN09,ON-01,visual perception
+349,RSN09,ON-01,visual perception
+350,RSN09,ON-01,visual perception
+351,RSN09,ON-01,visual perception
+352,RSN04,PcN-02,articulation
+353,RSN04,PcN-02,articulation
+354,RSN04,PcN-02,articulation
+355,RSN04,PcN-02,articulation
+356,RSN15,L-FTN,syntactic processing
+357,RSN15,L-FTN,syntactic processing
+358,RSN15,L-FTN,syntactic processing
+359,RSN15,L-FTN,syntactic processing
+360,RSN15,L-FTN,syntactic processing
+361,RSN15,L-FTN,syntactic processing
+362,RSN15,L-FTN,syntactic processing
+363,RSN15,L-FTN,syntactic processing
+364,RSN30,D-FPN-02,motor imagery
+365,RSN30,D-FPN-02,motor imagery
+366,RSN30,D-FPN-02,motor imagery
+367,RSN30,D-FPN-02,motor imagery
+368,RSN30,D-FPN-02,motor imagery
+369,RSN30,D-FPN-02,motor imagery
+370,RSN30,D-FPN-02,motor imagery
+371,RSN30,D-FPN-02,motor imagery
+372,RSN25,R-PcN,movement (left hand)
+373,RSN25,R-PcN,movement (left hand)
+374,RSN25,R-PcN,movement (left hand)
+375,RSN25,R-PcN,movement (left hand)
+376,RSN21,L-PcN,movement (right hand)
+377,RSN21,L-PcN,movement (right hand)
+378,RSN21,L-PcN,movement (right hand)
+379,RSN21,L-PcN,movement (right hand)
+380,RSN28,med-FN,theory of mind
+381,RSN28,med-FN,theory of mind
+382,RSN28,med-FN,theory of mind
+383,RSN28,med-FN,theory of mind
+384,RSN20,R-FTPN-02,mental arithmetic
+385,RSN20,R-FTPN-02,mental arithmetic
+386,RSN20,R-FTPN-02,mental arithmetic
+387,RSN20,R-FTPN-02,mental arithmetic
+388,RSN17,R-FTPN-01,"self monitoring, theory of mind"
+389,RSN17,R-FTPN-01,"self monitoring, theory of mind"
+390,RSN08,D-FPN-03,spatial selective attention
+391,RSN08,D-FPN-03,spatial selective attention
+392,RSN08,D-FPN-03,spatial selective attention
+393,RSN08,D-FPN-03,spatial selective attention
+394,RSN08,D-FPN-03,spatial selective attention
+395,RSN08,D-FPN-03,spatial selective attention
+396,RSN32,OTN,object perception
+397,RSN05,med-TN,memory retrieval
+398,RSN05,med-TN,memory retrieval
+399,RSN07,med-FPN,self-referential processing
+400,RSN07,med-FPN,self-referential processing
+401,RSN07,med-FPN,self-referential processing
+402,RSN07,med-FPN,self-referential processing
+403,RSN02,R-FTPN-03,n.s.
+404,RSN06,PcN-01,movement (limb)
+405,RSN06,PcN-01,movement (limb)
+406,RSN06,PcN-01,movement (limb)
+407,RSN06,PcN-01,movement (limb)
+408,RSN06,PcN-01,movement (limb)
+409,RSN06,PcN-01,movement (limb)
+410,RSN06,PcN-01,movement (limb)
+411,RSN06,PcN-01,movement (limb)
+412,RSN06,PcN-01,movement (limb)
+413,RSN31,R-FInsN,interference resolution
+414,RSN19,L-FTPN-01,sentence comprehension
+415,RSN19,L-FTPN-01,sentence comprehension
+416,RSN14,TN-01,auditory perception
+417,RSN23,L-InsFPN,phonological working memory
+418,RSN23,L-InsFPN,phonological working memory
+419,RSN23,L-InsFPN,phonological working memory
+420,RSN23,L-InsFPN,phonological working memory
+421,RSN23,L-InsFPN,phonological working memory
+422,RSN12,L-FTPN-02,reasoning
+423,RSN12,L-FTPN-02,reasoning
+424,RSN22,mCingInsN,performance monitoring
+425,RSN22,mCingInsN,performance monitoring
+426,RSN22,mCingInsN,performance monitoring
+427,RSN16,mCingFPN,working memory
+428,RSN16,mCingFPN,working memory
+429,RSN16,mCingFPN,working memory
+430,RSN16,mCingFPN,working memory
+431,RSN16,mCingFPN,working memory
+432,RSN16,mCingFPN,working memory
+433,RSN16,mCingFPN,working memory
+434,RSN16,mCingFPN,working memory
+435,RSN10,D-FPN-01,motor planning
+436,RSN10,D-FPN-01,motor planning
+437,RSN10,D-FPN-01,motor planning
+438,RSN10,D-FPN-01,motor planning
+439,RSN27,FTPN-02,"reading, mental arithmetic"
+440,RSN09,ON-01,visual perception
+441,RSN09,ON-01,visual perception
+442,RSN04,PcN-02,articulation
+443,RSN04,PcN-02,articulation

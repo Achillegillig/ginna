@@ -13,10 +13,13 @@ Two versions of the atlas are provided:
 ## GINNA-RSN-Overlap: Original GINNA atlas
 Voxel-level maps of each individual GINNA network. Available a zscore or binary maps [here](/atlas/GINNA-RSN-Overlap)
 
-<img src="images/rsn_lowlevel.png" alt="Example Image" width="750"/>
+```html
+<p align="center">
+  <img src="images/rsn_lowlevel.png" alt="Low-level RSNs" width="380"/>
+  <img src="images/rsn_highlevel.png" alt="High-level RSNs" width="380"/>
+</p>
+```
 
-
-<img src="images/rsn_highlevel.png" alt="Example Image" width="800"/>
 
 As the networks may overlap, the zstat atlas can be used as a probabilistic atlas. see [examples from nilearn](https://nilearn.github.io/dev/auto_examples/03_connectivity/plot_probabilistic_atlas_extraction.html).
 
@@ -24,7 +27,7 @@ As the networks may overlap, the zstat atlas can be used as a probabilistic atla
 Parcellation into 443 regions, each one assigned to 1 GINNA network. Accessible [here](/atlas/GINNA-HardParc-443)
 
 
-<img src="images/hardparc_illustration.png" alt="Example Image" width="800"/>
+<img src="images/hardparc_illustration.png" alt="Example Image" width="600"/>
 
 This version is well-suited for functional connectivity analyses such as functional connectivity prediction of behavior.
 

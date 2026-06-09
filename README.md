@@ -15,8 +15,8 @@ Voxel-level maps of each individual GINNA network. Available a zscore or binary 
 
 
 <p align="center">
-  <img src="images/rsn_lowlevel.png" alt="Low-level RSNs" width="500"/>
-  <img src="images/rsn_highlevel.png" alt="High-level RSNs" width="500"/>
+  <img src="images/rsn_lowlevel.png" alt="Low-level RSNs" width="600"/>
+  <img src="images/rsn_highlevel.png" alt="High-level RSNs" width="600"/>
 </p>
 
 
@@ -26,8 +26,9 @@ As the networks may overlap, the zstat atlas can be used as a probabilistic atla
 ## GINNA-HardParc-443: region-level, non-overlapping parcellation of the GINNA networks
 Parcellation into 443 regions, each one assigned to 1 GINNA network. Accessible [here](/atlas/GINNA-HardParc-443)
 
-
-<img src="images/hardparc_illustration.png" alt="Example Image" width="600"/>
+<p align="center">
+  <img src="images/hardparc_illustration.png" alt="Example Image" width="600"/>
+</p>
 
 This version is well-suited for functional connectivity analyses such as functional connectivity prediction of behavior.
 

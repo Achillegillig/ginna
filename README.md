@@ -8,9 +8,29 @@ Each network is provided with a suggested cognitive label, as determined to fait
 
 More details are available in the [publication](https://www.nature.com/articles/s42003-025-07671-2)
 
-Two versions of the atlas are provided: zstats maps (includes overlap) and binary maps (no overlap between networks). 
+Two versions of the atlas are provided: 
+ 
+## GINNA-RSN-Overlap: Original GINNA atlas
+Voxel-level maps of each individual GINNA network. Available a zscore or binary maps [here](/atlas/GINNA-RSN-Overlap)
+
+
+<p align="center">
+  <img src="images/rsn_lowlevel.png" alt="Low-level RSNs" width="500"/>
+  <img src="images/rsn_highlevel.png" alt="High-level RSNs" width="500"/>
+</p>
+
+
 
 As the networks may overlap, the zstat atlas can be used as a probabilistic atlas. see [examples from nilearn](https://nilearn.github.io/dev/auto_examples/03_connectivity/plot_probabilistic_atlas_extraction.html).
+
+## GINNA-HardParc-443: region-level, non-overlapping parcellation of the GINNA networks
+Parcellation into 443 regions, each one assigned to 1 GINNA network. Accessible [here](/atlas/GINNA-HardParc-443)
+
+<p align="center">
+  <img src="images/hardparc_illustration.png" alt="Example Image" width="600"/>
+</p>
+
+This version is well-suited for functional connectivity analyses such as functional connectivity prediction of behavior.
 
 # Community-driven cognitive labeling
 
@@ -29,13 +49,7 @@ All packages required to run the code (except NiMare) are included in the in-hou
 ```
 python -m pip install neuroginius
 ```
-# The GINNA Atlas
 
-<img src="images/rsn_lowlevel.png" alt="Example Image" width="750"/>
-
-
-
-<img src="images/rsn_highlevel.png" alt="Example Image" width="800"/>
 
 # Summary of attributed cognitive processes for each RSN
 

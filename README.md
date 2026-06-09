@@ -13,12 +13,12 @@ Two versions of the atlas are provided:
 ## GINNA-RSN-Overlap: Original GINNA atlas
 Voxel-level maps of each individual GINNA network. Available a zscore or binary maps [here](/atlas/GINNA-RSN-Overlap)
 
-```html
+
 <p align="center">
   <img src="images/rsn_lowlevel.png" alt="Low-level RSNs" width="380"/>
   <img src="images/rsn_highlevel.png" alt="High-level RSNs" width="380"/>
 </p>
-```
+
 
 
 As the networks may overlap, the zstat atlas can be used as a probabilistic atlas. see [examples from nilearn](https://nilearn.github.io/dev/auto_examples/03_connectivity/plot_probabilistic_atlas_extraction.html).

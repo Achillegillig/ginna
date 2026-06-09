@@ -15,8 +15,8 @@ Voxel-level maps of each individual GINNA network. Available a zscore or binary 
 
 
 <p align="center">
-  <img src="images/rsn_lowlevel.png" alt="Low-level RSNs" width="380"/>
-  <img src="images/rsn_highlevel.png" alt="High-level RSNs" width="380"/>
+  <img src="images/rsn_lowlevel.png" alt="Low-level RSNs" width="500"/>
+  <img src="images/rsn_highlevel.png" alt="High-level RSNs" width="500"/>
 </p>
 
 
